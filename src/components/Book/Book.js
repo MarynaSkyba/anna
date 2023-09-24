@@ -4,7 +4,6 @@ import BookSlider from "../../utils/BookSlider/BookSlider";
 import YouTubeVideo from "../../utils/YoutubeVideo";
 import book from "./images/book.png"
 import revision from "./images/revision.jpeg"
-import { NavLink } from "react-router-dom";
 
 
 export default function Book() {
@@ -16,7 +15,7 @@ export default function Book() {
     </TitleTextContainer>
 
   <MainBookContainer>
-  <ImgContainer large={false} >
+  <ImgContainer $large={false} >
 <Img src={book} alt="Book"  />
 </ImgContainer>
     <DescriptionTextContainer>
@@ -51,7 +50,6 @@ The best tools were taken from each direction, and the author also created his o
 
   <MainReviewContainer>
     <DescriptionTextContainer>
-<DescriptionText>
 <BoldTitleText>
 Review
 </BoldTitleText>
@@ -62,6 +60,7 @@ Art therapist. PhD. Wrote 28 books.
 
 </BoldText>
 
+<DescriptionText>
 “Self-knowledge is a long journey of education. Every stage along the way is full of surprises and obstacles.
 This book is about how to become someone who can, wants and does everything for the happiness of oneself and others.
 This book is a challenge.
@@ -69,7 +68,7 @@ It is very important in the rush of life not to miss this quiet heart call of yo
 </DescriptionText>
     </DescriptionTextContainer>
     
-    <ImgContainer large={true}>
+    <ImgContainer $large={true}>
 <Img src={revision} alt="Elena Tararina"  />
 </ImgContainer> 
 

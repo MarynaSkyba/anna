@@ -1,7 +1,5 @@
 import { FaTimes } from "react-icons/fa";
 import styled from "styled-components";
-// import { Link as LinkR } from "react-router-dom";
-// import { Link as LinkS } from "react-scroll";
 import { Link } from "react-router-dom";
 import { colors } from "../../styles";
 
@@ -16,8 +14,8 @@ align-items: center;
 top:0;
 left:0;
 transition: 0.2s ease-in-out;
-opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+opacity: ${({ open }) => (open ? '100%' : '0')};
+top: ${({ open }) => (open ? '0' : '-100%')};
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -35,9 +33,9 @@ outline: none;
 `
 
 
-export const SidebarWrapper = styled.div`
-color: red; //what is it?
-`
+// export const SidebarWrapper = styled.div`
+// color: red; //what is it?
+// `
 
 export const SidebarMenu = styled.ul`
 display:grid;

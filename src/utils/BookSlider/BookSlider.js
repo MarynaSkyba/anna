@@ -1,8 +1,4 @@
 import {useState} from 'react';
-// import Slider from 'react-slick';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
-
 import bookImage1 from '../../images/book/1.webp';
 import bookImage2 from '../../images/book/2.webp';
 import bookImage3 from '../../images/book/3.webp';
@@ -37,7 +33,7 @@ const slides = [bookImage1, bookImage2, bookImage3]
         <FiArrowLeftCircle color={colors.accent} />
         </Arrow>
         
-      <Slide backgroundImage={slides[currentIndex]}></Slide>
+      <Slide $backgroundImage={slides[currentIndex]}></Slide>
       <Arrow onClick={goToNext}>
 <FiArrowRightCircle color={colors.accent}/>
         </Arrow>
@@ -47,7 +43,7 @@ const slides = [bookImage1, bookImage2, bookImage3]
           <Dot
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            isActive={slideIndex === currentIndex}
+            $isActive={slideIndex === currentIndex}
 
           >
 <BsDot/>          </Dot>

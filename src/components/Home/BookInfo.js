@@ -6,7 +6,7 @@ export default function BookInfo() {
   return (
 <BookInfoContainer>
 <ImgContainer>
-<Img src={book} alt="Book" large={false} />
+<Img src={book} alt="Book" $large={false} />
 
 </ImgContainer>
 <BookTextContainer>

@@ -8,7 +8,7 @@ export const Slide = styled.div`
   border-radius: 10px;
   background-size: cover;
   background-position: center;
-  background-image: url(${props => props.backgroundImage});
+  background-image: url(${props => props.$backgroundImage});
 
 `;
 
@@ -26,16 +26,6 @@ export const Arrow = styled.div`
   cursor: pointer;
 `;
 
-// export const LeftArrow = styled.div`
-//   position: absolute;
-//   top: 50%;
-//   transform: translate(0, -50%);
-//   left: 32px;
-//   font-size: 45px;
-//   color: #fff;
-//   z-index: 1;
-//   cursor: pointer;
-// `;
 
 export const Slider = styled.div`
   height: 100%;
@@ -51,7 +41,7 @@ export const Dot = styled.span`
   margin: 0 5px;
   cursor: pointer;
   font-size: 20px;
-  color: ${(props) => (props.isActive ? colors.accent : colors.grey)};
+  color: ${(props) => (props.$isActive ? colors.accent : colors.grey)};
   border-radius: 50;
 `;
 

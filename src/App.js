@@ -13,10 +13,8 @@ import Products from "./components/Products/Products";
 import Book from "./components/Book/Book";
 import styled from "styled-components";
 
-
-
 import Footer from "./components/Footer/Footer";
-import ContactForm from './components/Contact/ContactForm';
+import ContactForm from './components/ContactForm/ContactForm';
 
 
 const LazyHome = lazy(() => import("./components/Home/Home"))

@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import CountUp from "../../utils/CountUp";
 import styled from "styled-components";
 import { colors } from "../../styles";
@@ -56,9 +55,9 @@ const Counter = () => {
   return (
     <Container
     >
-      {data.map((item) => (
+      {data.map((item,index) => (
         <CounterContainer
-        >
+        key={index}>
           <CountUp start={0} end={item.number} />
           <Text>
             

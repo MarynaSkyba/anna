@@ -11,6 +11,7 @@ justify-content: center;
 align-items: center;
 
 @media screen and (max-width: 768px) {
+  position: relative;
     display: block;
         height: 600px;
         max-width: 500px;
@@ -32,11 +33,22 @@ padding: 0 15px;
 `
 
 export const HeroH1 = styled.h1`
+  font-size: 2.0rem;
+  color: ${colors.grey};
+  padding: 0 20px 20px;
+  text-align: center;
+  @media screen and (min-width: 768px) { 
+    display: none;
+
+  }
+  
+`;
+
+export const HeroH2 = styled.h2`
   color: ${colors.white};
-  font-size: 4rem;
+  font-size: 2.5rem;
   @media screen and (max-width: 768px) { 
-    font-size: 3.0rem;
-    color: ${colors.grey};
+   display: none;
 
   }
   

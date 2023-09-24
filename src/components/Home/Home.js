@@ -1,9 +1,9 @@
 import React from "react";
-import styled from "styled-components";
 import {
   HeroBtnContainer,
   HeroContainer,
   HeroH1,
+  HeroH2,
   HeroText,
   HeroImg,
   HeroImgContainer,
@@ -24,13 +24,15 @@ function Home() {
     <>
 
  
+      <HeroH1>This is a space of transformation for women who are ready to grow, powerful and vibrant</HeroH1>
        <HeroContainer>
         <HeroBtnContainer>
         <HeroTextContainer>
-          <HeroH1>Let's the jorney begins</HeroH1>
+        <HeroH2>This is a space of transformation for women who are ready to grow, powerful and vibrant</HeroH2>
+
           <HeroText>What are you waiting for?</HeroText>
           </HeroTextContainer>
-          <Button primary dark uppercase>
+          <Button $primary $dark $uppercase>
             Tap here to begin
           </Button>
         </HeroBtnContainer>

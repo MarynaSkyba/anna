@@ -1,5 +1,5 @@
 // src/components/YouTubePlayer.js
-import React from 'react';
+import {useState, useEffect} from 'react';
 import YouTube from 'react-youtube';
 import { styled } from 'styled-components';
 
@@ -19,20 +19,35 @@ margin: 20px 0;
 
 
 const YouTubeVideo = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const dynamicWidth = screenWidth / 1.25;
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const videoId = 'u6IUtxHRCXg';
 
   const mobileOpts = {
-    width: '500',
+    width: dynamicWidth,
     height: '350', 
   };
   
   const tabletOpts = {
-    width: '700', 
+    width: dynamicWidth, 
     height: '400', 
   };
   
   const desktopOpts = {
-    width: '900', 
+    width:dynamicWidth, 
     height: '500', 
   };
 

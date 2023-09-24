@@ -12,11 +12,11 @@ export const Button = styled(Link)`
 
   /* background: ${props => props.$primary ? "#BF4F74" : "white"}; */
 
-  background: ${({ primary }) => (primary ? colors.accent : colors.white)};
-  padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? colors.white : colors.main)};
-  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
-  text-transform: ${({ uppercase }) => (uppercase ? "uppercase" : "")};
+  background: ${({ $primary }) => ($primary ? colors.accent : colors.white)};
+  padding: ${({ $big }) => ($big ? "14px 48px" : "12px 30px")};
+  color: ${({ $dark }) => ($dark ? colors.white : colors.main)};
+  font-size: ${({ $fontBig }) => ($fontBig ? "20px" : "16px")};
+  text-transform: ${({ $uppercase }) => ($uppercase ? "uppercase" : "")};
   outline: none;
   border: none;
   cursor: pointer;

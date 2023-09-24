@@ -56,7 +56,10 @@ text-transform: uppercase;
 
   export const BoldText =styled.p`
   font-weight: 900;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  color:  ${colors.mainGrey};
+
 
   `
 
@@ -70,7 +73,7 @@ color: ${colors.accent};
 
 
 
-export const DescriptionText = styled.p`
+export const DescriptionText = styled.div`
 color:  ${colors.mainGrey};
 font-size: 1.3rem;
 `;
@@ -100,7 +103,7 @@ export const ImgContainer = styled.div`
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    max-width: ${(props) => (props.large ? '800px' : '300px')};
+    max-width: ${(props) => (props.$large ? '800px' : '300px')};
     @media screen and (min-width: 768px) {
      flex: 1;
     }

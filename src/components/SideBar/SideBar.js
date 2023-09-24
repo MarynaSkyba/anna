@@ -16,11 +16,11 @@ import { FaInstagram, FaEnvelope } from "react-icons/fa"; // Import the icons yo
 
 function Sidebar({isOpen, toggle}) {
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+    <SidebarContainer open={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
         <CloseIcon></CloseIcon>
       </Icon>
-      <SidebarWrapper>
+      <div>
         <SidebarMenu>
         <SidebarLink to="/" onClick={toggle}>Home</SidebarLink>
 
@@ -35,9 +35,7 @@ function Sidebar({isOpen, toggle}) {
         </SideBtnWrap>
         <IconContainer>
         <SocialIcon
-          href="https://www.instagram.com/___anna_s____/"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://instagram.com/___anna_str____"
         >
           <FaInstagram />
         </SocialIcon>
@@ -45,7 +43,7 @@ function Sidebar({isOpen, toggle}) {
           <FaEnvelope />
         </SocialIcon>
       </IconContainer>
-      </SidebarWrapper>
+      </div>
 
     </SidebarContainer>
   );

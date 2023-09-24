@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-// import { Link } from "react-scroll";
 import { GiLotus } from "react-icons/gi";
 import {colors} from "../../styles"
 

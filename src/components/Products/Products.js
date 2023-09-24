@@ -44,14 +44,14 @@ function Products() {
   return (
     <ProductsContainer id="Products">
       <ProductsWrapper>
-      {data.map((item)=> (
+      {data.map((item, index)=> (
 
-        <ProductsCard>
+        <ProductsCard key={`${index}-${item.price}`}>
           <ProductsIcon src={item.icon} />
           <ProductsText>{item.title}</ProductsText>
           <ProductsDescription>{item.description}</ProductsDescription>
           {item.plan.map((step) => (
-            <StepContainer>
+            <StepContainer key={`${index}-${step}`}>
 <IoCheckmarkDoneOutline color={colors.accent} size={30}/>
           <p>{step}</p>
             </StepContainer>

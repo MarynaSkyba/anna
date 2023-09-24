@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-import { FormContainer, FormTitle, FormGroup, Label, Input, Select, TextArea, Button } from "./ContatcFormElements";
-import CustomSelect from "../../utils/Select";
-import OptionSelect from "../../utils/OptionSelect";
+import { FormContainer, FormTitle, FormGroup, Label, Input, Select, TextArea } from "./ContatcFormElements";
+// import CustomSelect from "../../utils/Select";
+// import OptionSelect from "../../utils/OptionSelect";
 import { useLocation } from 'react-router-dom'
-
+import { Button } from "../../utils/Button";
 
 
 export default function ContactForm() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const selectedPrice = queryParams.get('price') || 'Option 1';
-console.log("selectedPrice", selectedPrice)
 
   const [formData, setFormData] = useState({
     email: "",
@@ -110,7 +109,7 @@ console.log("selectedPrice", selectedPrice)
           />
         </FormGroup>
       
-        <Button type="submit">Submit</Button>
+        <Button $uppercase $primary $dark type="submit">Send</Button>
       </form>
     </FormContainer>
   );

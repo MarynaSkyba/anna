@@ -16,9 +16,9 @@ function Webinars() {
   return (
     <WebinarsContainer id="webinars">
       <WebinarsWrapper>
-      {data.map((item)=> (
+      {data.map((item, index)=> (
 
-        <WebinarsCard>
+        <WebinarsCard key={`${index}-1`}>
           <WebinarsIcon src={item.icon} />
           <WebinarsText>{item.title}</WebinarsText>
           <WebinarsDescription>{item.description}</WebinarsDescription>

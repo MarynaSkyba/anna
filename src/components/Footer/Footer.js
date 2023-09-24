@@ -19,9 +19,8 @@ const Footer = () => {
       </TextContainer>
       <IconContainer>
         <SocialIcon
-          href="https://www.instagram.com/___anna_s____/"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://instagram.com/___anna_str____"
+         
         >
           <FaInstagram />
         </SocialIcon>
